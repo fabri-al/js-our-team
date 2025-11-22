@@ -1,0 +1,21 @@
+
+#flex-container {
+
+    display: flex;
+    position: relative;
+    padding: 40px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+    
+    left: 40px;
+}
+
+
+#card {
+
+    display: flex;
+    position: relative;
+
+    left: 50px;
+}
+    
