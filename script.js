@@ -39,15 +39,15 @@ const teamMembers = [
 
 
 function cardAziendaComp() {
-  
-  const listElement = document.getElementById("flex-container");
-  let listHTML = "";
+
+  const HTML_Element = document.getElementById("flex-container");
+  let elem = "";
   for (let i = 0; i < teamMembers.length; i++) {
-  const team = teamMembers[i];
-  
+    const team = teamMembers[i];
 
 
-  const card = `<div class="card" style="width: 18rem;">
+
+    const card = `<div class="card" style="width: 18rem;">
     <img src="${team.img}" class="card-img-top" alt="${team.name}">
       <div class="card-body">
         <h5 class="card-title">${team.name}</h5>
@@ -59,13 +59,13 @@ function cardAziendaComp() {
 
 
 
-listHTML += card;
+    elem += card;
 
-}
+  }
 
 
-listElement.innerHTML = listHTML;
-  
+  HTML_Element.innerHTML = elem;
+
 
 
 }
